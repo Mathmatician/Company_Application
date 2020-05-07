@@ -2,7 +2,7 @@ using System;
 
 namespace Company_Application
 {
-    class Program
+    class Source
     {
         static void Main(string[] args)
         {
