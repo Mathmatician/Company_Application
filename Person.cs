@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Person_Space
 {
@@ -34,8 +34,7 @@ namespace Person_Space
             phoneNumber = pnum;
         }
 
-
-
+        
         /*-------------------
          | Return functions |
          ------------------*/
@@ -52,6 +51,17 @@ namespace Person_Space
         public long getPhoneNumber()
         {
             return phoneNumber;
+        }
+
+
+        /*-------------
+         | Print Info |
+         ------------*/
+         public virtual void PrintInfo()
+        {
+            Console.Write("Name:" + "\t\t\t"); Console.WriteLine(getName());
+            Console.Write("Address:" + "\t\t"); Console.WriteLine(getAddress());
+            Console.Write("Phone Number:" + "\t\t"); Console.WriteLine(getPhoneNumber());
         }
     }
 }
