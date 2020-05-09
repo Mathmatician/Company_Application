@@ -8,6 +8,10 @@ namespace Company_Application
         // Initialization Variables //
         private long accountNumber = 0;
 
+
+        /*---------------
+         | Constructors |
+         --------------*/
         public Client()
         {
             Console.WriteLine("This Client account is empty");
@@ -43,8 +47,8 @@ namespace Company_Application
 
         /*---------------------
          | Prints Client info |
-         ---------------------*/
-        public void PrintInfo()
+         --------------------*/
+        public override void PrintInfo()
         {
             Console.Write("Name:" + "\t\t\t"); Console.WriteLine(getName());
             Console.Write("Address:" + "\t\t"); Console.WriteLine(getAddress());
