@@ -1,15 +1,12 @@
-﻿using System;
+using System;
 using System.Globalization;
+using Person_Space;
 
 namespace Company_Application
 {
-    class Employee
+    class Employee : Person
     {
         // Initialization Variables //
-        private string firstName = "";
-        private string lastName = "";
-        private string address = "";
-        private long phoneNumber = 0;
         private long employeeNumber = 0;
         private double salary = 0;
 
@@ -37,49 +34,9 @@ namespace Company_Application
         /*----------------
          | Set Functions |
          ---------------*/
-        private void setFirstName(string fnm)
-        {
-            firstName = fnm;
-        }
-
-        private void setLastName(string lnm)
-        {
-            lastName = lnm;
-        }
-
-        private void setAddress(string addr)
-        {
-            address = addr;
-        }
-
-        private void setPhoneNumber(long pnum)
-        {
-            phoneNumber = pnum;
-        }
-
         private void setEmployeeNumber(long num)
         {
             employeeNumber = num;
-        }
-
-
-
-        /*-------------------
-         | Return functions |
-         ------------------*/
-        public string getName()
-        {
-            return firstName + " " + lastName;
-        }
-
-        public string getAddress()
-        {
-            return address;
-        }
-
-        public long getPhoneNumber()
-        {
-            return phoneNumber;
         }
 
         public long getEmployeeNumber()
@@ -87,6 +44,9 @@ namespace Company_Application
             return employeeNumber;
         }
 
+        /*----------------
+         | Get Functions |
+         ---------------*/
         public double getSalary()
         {
             return salary;
