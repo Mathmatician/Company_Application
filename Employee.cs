@@ -9,7 +9,7 @@ namespace Company_Application
         // Initialization Variables //
         private long employeeNumber = 0;
         private double salary = 0;
-
+        
 
         /*---------------
          | Constructors |
@@ -28,8 +28,7 @@ namespace Company_Application
             employeeNumber = empNum;
             salary = slry;
         }
-
-
+        
 
         /*----------------
          | Set Functions |
@@ -44,9 +43,10 @@ namespace Company_Application
             return employeeNumber;
         }
 
-        /*----------------
-         | Get Functions |
-         ---------------*/
+
+        /*-------------
+         | Get Salary |
+         ------------*/
         public double getSalary()
         {
             return salary;
@@ -56,7 +56,7 @@ namespace Company_Application
         /*-----------------------
          | Prints employee info |
          ----------------------*/
-        public void PrintInfo()
+        public override void PrintInfo()
         {
             Console.Write("Name:" + "\t\t\t"); Console.WriteLine(getName());
             Console.Write("Address:" + "\t\t"); Console.WriteLine(getAddress());
