@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Person_Space;
 
 namespace Company_Application
@@ -19,20 +19,12 @@ namespace Company_Application
 
         public Client(string fname, string lname, string addr, long pnum, long clntNum)
         {
-            firstName = fname;
-            lastName = lname;
-            address = addr;
-            phoneNumber = pnum;
+            setFirstName(fname);
+            setLastName(lname);
+            setAddress(addr);
+            setPhoneNumber(pnum);
+
             accountNumber = clntNum;
-        }
-
-
-        /*---------------------
-         | Set Account Number |
-         --------------------*/
-        private void setAccountNumber(long num)
-        {
-            accountNumber = num;
         }
 
 

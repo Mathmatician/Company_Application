@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Globalization;
 using Person_Space;
 
@@ -21,10 +21,11 @@ namespace Company_Application
 
         public Employee(string fname, string lname, string addr, long pnum, long empNum, double slry)
         {
-            firstName = fname;
-            lastName = lname;
-            address = addr;
-            phoneNumber = pnum;
+            setFirstName(fname);
+            setLastName(lname);
+            setAddress(addr);
+            setPhoneNumber(pnum);
+
             employeeNumber = empNum;
             salary = slry;
         }
@@ -33,20 +34,22 @@ namespace Company_Application
         /*----------------
          | Set Functions |
          ---------------*/
-        private void setEmployeeNumber(long num)
-        {
-            employeeNumber = num;
-        }
 
-        public long getEmployeeNumber()
+        public void setSalary(double slry)
         {
-            return employeeNumber;
+            salary = slry;
         }
 
 
         /*-------------
          | Get Salary |
          ------------*/
+
+        public long getEmployeeNumber()
+        {
+            return employeeNumber;
+        }
+
         public double getSalary()
         {
             return salary;

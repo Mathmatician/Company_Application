@@ -1,35 +1,35 @@
-using System;
+﻿using System;
 
 namespace Person_Space
 {
     class Person
     {
         // Initialization Variables //
-        protected string firstName = "";
-        protected string lastName = "";
-        protected string address = "";
-        protected long phoneNumber = 0;
+        private string firstName = "";
+        private string lastName = "";
+        private string address = "";
+        private long phoneNumber = 0;
 
 
         /*----------------
          | Set Functions |
          ---------------*/
-        private void setFirstName(string fnm)
+        public void setFirstName(string fnm)
         {
             firstName = fnm;
         }
 
-        private void setLastName(string lnm)
+        public void setLastName(string lnm)
         {
             lastName = lnm;
         }
 
-        private void setAddress(string addr)
+        public void setAddress(string addr)
         {
             address = addr;
         }
 
-        private void setPhoneNumber(long pnum)
+        public void setPhoneNumber(long pnum)
         {
             phoneNumber = pnum;
         }
